@@ -3,12 +3,12 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List<App> apps = new ArrayList<>();
-        apps.add(new App("SuperGame", "JohnDoe", 450, "Games", 20));
-        apps.add(new App("MegaTool", "JaneDoe", 550, "Utility", 10));
-        apps.add(new App("FinTrack", "BadDev", 400, "Finance", 5));
-        apps.add(new App("EnterpriseSuite", "CorpDev", 300, "Enterprise", 150));
+        List<App> appsToProcess = new ArrayList<>();
+        appsToProcess.add(new App("GalaxyRunner", "AliceSmith", 320.75, "Games", 12.49));
+        appsToProcess.add(new App("ToolBoxPro", "BobJones", 480.0, "Utility", 25.0));
+        appsToProcess.add(new App("MoneyMate", "CharlieBrown", 410.0, "Finance", 7.5));
+        appsToProcess.add(new App("EnterpriseX", "DeltaCorp", 290.0, "Enterprise", 199.99));
 
-        AppManager.processApps(apps);
+        AppManager.processApps(appsToProcess);
     }
 }
